@@ -27,6 +27,7 @@ function RandomHexColorCode () {
   }
   return '#' + color;
 }
+
 function addColor () {
   randomColorBlock.forEach(e => {
     var newColor = RandomHexColorCode();
