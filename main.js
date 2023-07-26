@@ -13,6 +13,7 @@ for (let i = 1; i <= 9; i++) {
   });
 }
 
+
 const btn = document.querySelector('.btn');
 const randomColorBlock = document.querySelectorAll('.box');
 
