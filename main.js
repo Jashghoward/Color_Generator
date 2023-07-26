@@ -13,7 +13,6 @@ for (let i = 1; i <= 9; i++) {
   });
 }
 
-
 const btn = document.querySelector('.btn');
 const randomColorBlock = document.querySelectorAll('.box');
 
@@ -28,9 +27,6 @@ function RandomHexColorCode () {
   }
   return '#' + color;
 }
-
-
-
 function addColor () {
   randomColorBlock.forEach(e => {
     var newColor = RandomHexColorCode();
