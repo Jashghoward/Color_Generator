@@ -1,1 +1,1 @@
-Read me test
+This is a color generator 
