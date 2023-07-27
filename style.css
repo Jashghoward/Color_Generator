@@ -7,7 +7,7 @@
 body {
   font-family: 'sans';
   color: black;
-  background-color: #19172e;
+  background-color: #1a2c3a;
 }
 
 @font-face {
@@ -17,6 +17,7 @@ body {
 .heading {
   color: white;
   padding-top: 10px;
+  padding-bottom: 125px;
   justify-content: center;
   text-align: center;
   font-size: 2rem;
@@ -27,7 +28,7 @@ body {
   color: white;
   padding: 15px 60px;
   font-size: 1.5rem;
-  margin: 20px auto;
+  margin: 10px auto;
   display: block;
   cursor: pointer;
   border-radius: 5px;
@@ -41,15 +42,16 @@ body {
 
 .item {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
 .copy {
+  text-align: center;
   color: white;
   padding: 15px 20px;
   font-size: 1.5rem;
-  margin: 20px auto;
+  margin: 2px auto;
   background: #333;
   cursor: not-allowed;
   border-radius: 5px;

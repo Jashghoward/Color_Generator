@@ -2,8 +2,6 @@ window.onload = function () {
   addColor();
 };
 
-
-
 for (let i = 1; i <= 9; i++) {
   const box = document.createElement('div');
   box.classList.add('box');
