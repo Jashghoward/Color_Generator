@@ -68,13 +68,11 @@ document.querySelector('.btn').addEventListener('click', toggleAutoPlay);
 
 
 
-  // Add the 'flash' class to the clicked box to trigger the animation
   function flashColorBox(box) {
     box.classList.add('flash');
-    // Remove the 'flash' class after a short delay to stop the animation
     setTimeout(() => {
       box.classList.remove('flash');
-    }, 1000); // Adjust the duration (in milliseconds) to match the animation duration
+    }, 1000); // Adjust the duration
   }
 
   randomColorBlock.forEach(box => {
