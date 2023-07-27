@@ -13,8 +13,6 @@ Functionality:
 - Animated Background
 - copied text! notification
 
-
-
 The basic structure of the code that I used for this project was from the profile listed below.
 
 https://swapnilsparsh.github.io/
