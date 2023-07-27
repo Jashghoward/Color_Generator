@@ -43,7 +43,7 @@ function showNotification(box) {
   notification.style.opacity = 1;
   setTimeout(() => {
     notification.style.opacity = 0;
-  }, 1000); // Adjust the duration (in milliseconds) as needed
+  }, 1000); // Adjust the duration
 }
 
 // Function to toggle automatic coloring
@@ -57,7 +57,7 @@ function toggleAutoPlay() {
     isPlaying = false;
     btn.textContent = 'Play';
   } else {
-    intervalId = setInterval(addColor, 900); // Adjust the interval (in milliseconds) as desired
+    intervalId = setInterval(addColor, 900); // Adjust the interval
     isPlaying = true;
     btn.textContent = 'Pause';
   }
