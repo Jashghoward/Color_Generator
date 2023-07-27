@@ -10,6 +10,8 @@ Functionality:
 - Play Button
 - Refresh Button
 - Color Squares
+- Animated Background
+- copied text! notification
 
 
 
