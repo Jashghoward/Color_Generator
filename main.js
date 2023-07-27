@@ -63,7 +63,6 @@ function toggleAutoPlay() {
   }
 }
 
-// Add event listener to the "Play" button
 document.querySelector('.btn').addEventListener('click', toggleAutoPlay);
 
   function flashColorBox(box) {
