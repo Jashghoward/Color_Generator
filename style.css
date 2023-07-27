@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  padding: 0;
+  padding: 10;
   box-sizing: border-box;
 }
 
@@ -8,6 +8,12 @@ body {
   font-family: 'sans';
   color: black;
   background-color: #1a2c3a;
+  padding: 25px;
+
+  /* The below is the gradient animated background */
+  background: linear-gradient(45deg, #454462, #575bdb, #2c8d89, #62598e);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
 }
 
 @font-face {
@@ -16,15 +22,15 @@ body {
 }
 .heading {
   color: white;
-  padding-top: 10px;
-  padding-bottom: 125px;
+  padding-top: 50px;
+  padding-bottom: 100px;
   justify-content: center;
   text-align: center;
   font-size: 2rem;
 }
 
 .btn {
-  background: #333;
+  background: #195d85;
   color: white;
   padding: 15px 60px;
   font-size: 1.5rem;
@@ -33,6 +39,8 @@ body {
   cursor: pointer;
   border-radius: 5px;
   border: none;
+  /* width: 300px;
+  height: 60px; */
 }
 
 .btn:hover {
@@ -90,10 +98,10 @@ footer a:visited {
   color: inherit;
 }
 
-.body {
+/* .body {
   display: flex;
   flex-direction: columm;
-}
+} */
 
 @media (max-width: 500px) {
   .box {
@@ -127,3 +135,91 @@ footer a:visited {
     padding: 5px;
   }
 }
+
+.notification {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  pointer-events: none; /* Prevents the notification from blocking clicks */
+  opacity: 0; /* Start with 0 opacity, it will be animated */
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* flashing effect */
+@keyframes flash {
+  20% {
+    background-color: inherit;
+  }
+  60% {
+    background-color: transparent;
+  }
+  70% {
+    background-color: transparent;
+  }
+  90% {
+    background-color: inherit;
+  }
+}
+
+.container .box.flash {
+  animation: flash 200ms;
+}
+
+/* Add a new keyframes animation for the background */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Update the container class to use the gradient animation */
+.container body{
+  /* Your existing container styles */
+  background: linear-gradient(45deg, #ffbf00, #ff007a, #3a86ff, #08ff00);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite; /* Adjust the animation duration as desired */
+}
+/* The gradientAnimation keyframes animation creates a smooth transition between the colors in the linear gradient.
+The background property applies a gradient background to the container. 
+The background-size property is set to 400% 400% to make the gradient larger than the container to allow smooth animation. 
+The animation property applies the gradientAnimation to the background and sets it to run infinitely with a 10-second duration for each loop. */
+
+/* Option 2: Animated Background Image */
+
+/* Alternatively, you can use an animated background image to achieve the animation effect. 
+There are various sources for animated background images, or you can create one using tools like Adobe After Effects or other animation software.
+Here's how you can use an animated background image:
+Update the CSS styles to use the animated background image:
+css
+Copy code */
+/* Update the container class to use the animated background image */
+
+
+/* .container {
+  Your existing container styles
+  background-image: url('path/to/animated-background.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+Replace 'path/to/animated-background.gif' with the correct path to your animated background image. The background-size: cover property ensures the image covers the container, and background-repeat: no-repeat prevents it from repeating.
+
+Choose the option that best suits your design and the animation style you desire for the application. */
+
+
+
+
+
